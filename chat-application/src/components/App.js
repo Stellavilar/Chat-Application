@@ -1,4 +1,6 @@
 import React from 'react';
+import {Route, Switch} from 'react-router';
+
 import '../styles/App.css';
 
 //import components
@@ -8,8 +10,14 @@ import HomePage from './HomePage';
 function App() {
   return (
     <div className="App">
-      <HomePage />
-      <ChatBox />
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route exact path="/chatzone">
+          <ChatBox />
+        </Route>
+      </Switch>
     </div>
   );
 }
