@@ -21,7 +21,7 @@ const HomePage = () => {
                         dispatch({type: SYNC_NICKNAME, nickname: newNickname})
                     }}/>
                 </Form.Field>
-                <Button type='submit'>Valider</Button>
+                <Button type='submit'color="green" >Valider</Button>
             </Form>
         </div>
     );

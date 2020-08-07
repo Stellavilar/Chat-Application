@@ -17,19 +17,17 @@ body {
  background-color: white;
  border-radius: 5px;
  display: flex;
- justify-content: center;
  flex-direction: column;
+ padding-bottom: 13em;
 
  .ui.form {
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: center;
-   padding-top: 10em;
  }
 
  img {
    width: 20%;
-   margin-left: 26.5em;
+   margin: auto;
  }
 }
