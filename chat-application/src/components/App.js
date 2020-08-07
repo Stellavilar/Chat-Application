@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Switch} from 'react-router';
 
-import '../styles/App.css';
+import '../styles/App.scss';
 
 //import components
 import ChatBox from './ChatBox';
