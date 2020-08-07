@@ -10,6 +10,26 @@ body {
   height: 100%;
  background-color: white;
  border-radius: 5px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+
+ .ui.header {
+   margin: auto;
+   padding: 20px
+ }
+
+ .ui.segment {
+   height: 100%;
+   display: flex;
+ }
+ form {
+   align-self: flex-end;
+ }
+ .ui.input {
+   width: 73vh;
+   margin: 20px;
+ }
   
 }
 .homepage {
