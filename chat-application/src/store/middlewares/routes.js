@@ -6,8 +6,7 @@ export default (store) => (next) => (action) => {
             action.history.push('/chatzone');
             break;
         }
-        default :{
+        default :
             next(action);
-        };
     };
 };

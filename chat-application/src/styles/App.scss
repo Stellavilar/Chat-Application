@@ -22,6 +22,7 @@ body {
  .ui.segment {
    height: 100%;
    display: flex;
+   flex-direction: column;
  }
  form {
    align-self: flex-end;

@@ -1,8 +1,8 @@
 export default (store) => (next) => (action) => {
     switch(action.type) {
-        default : {
+        default : 
             console.log('ACTION:', action.type);
             next(action);
-        };
     };
 };
+
