@@ -1,7 +1,6 @@
 import {
     SYNC_NICKNAME,
     SYNC_MESSAGE,
-    SEND_MESSAGE,
 } from './actions'
 
 const initialState = {
@@ -24,19 +23,7 @@ export default(state = initialState, action = {}) => {
                 message: action.message,
             }
         }
-        case SEND_MESSAGE : {
-            const newMessage = {
-                id:'',
-                author: state.nickname,
-                content: state.message
-            };
-            return {
-                ...state,
-                //Add newMessage to messages list
-                messages: [...state.messages, newMessage],
-            }
-        }
-       
+        
         default: {
             return state;
         }

@@ -4,6 +4,7 @@ export const ENTER_CHAT = 'actions/ENTER_CHAT';
 export const SYNC_MESSAGE = 'actions/SYNC_MESSAGE';
 export const SEND_MESSAGE = 'actions/SEND_MESSAGE';
 export const LOGIN  = 'actions/LOGIN';
+export const MESSAGE_RECEIVED = 'actions/MESSAGE_RECEIVED';
 
 export const login = (history) => ({type: LOGIN, history});
 
