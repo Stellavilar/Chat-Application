@@ -5,7 +5,7 @@ import { useHistory } from 'react-router';
 
 import logo from '../img/REACT CHAT.png';
 
-import { SYNC_NICKNAME, enterChat } from '../store/actions';
+import { SYNC_NICKNAME, enterChat} from '../store/actions';
 
 const HomePage = () => {
     const dispatch = useDispatch();

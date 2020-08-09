@@ -1,11 +1,3 @@
-// import { configureStore } from '@reduxjs/toolkit';
-
-
-// export default configureStore({
-//   reducer: {
-    
-//   },
-// });
 import { createStore, compose } from 'redux';
 import reducer from './reducer';
 import middlewares from './middlewares';

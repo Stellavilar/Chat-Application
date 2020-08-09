@@ -35,18 +35,18 @@ io.on('connection', (ws) => {
 
   console.log('>> Socket.IO - new client connected');
 
-  // Lorsque le client connecté envoie un message au serveur central sur son WS
-  ws.on('send_message', (message) => {
-    // Objectif du serveur central : générer un ID unique pour le message reçu,
-    // et transmettre le message.
+  // Le serveur central accueille le nouveau-venu.
+  // Il lui envoie un message à lui uniquement (ws.emit())
+  ws.emit('greetings', 'Bienvenue');
 
-    // eslint-disable-next-line no-plusplus
-    // ID unique rattaché au message reçu
-    message.id = ++id;
-
-    // Transmission du message aux clients connecté (io.emit et non pas ws.emit)
-    io.emit('send_message', message);
+  // Lorsque le client connecté envoie ses informations,
+  // on prévient les éventuels autres clients connectés.
+  ws.on('user_infos', ({ nickname }) => {
+    ws.broadcast.emit('new_user', {
+      nickname,
+    })
   });
+
 });
 
 /*

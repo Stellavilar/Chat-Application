@@ -3,7 +3,9 @@ export const SYNC_NICKNAME = 'actions/SYNC_NICKNAME';
 export const ENTER_CHAT = 'actions/ENTER_CHAT';
 export const SYNC_MESSAGE = 'actions/SYNC_MESSAGE';
 export const SEND_MESSAGE = 'actions/SEND_MESSAGE';
+export const LOGIN  = 'actions/LOGIN';
 
+export const login = (history) => ({type: LOGIN, history});
 
 export const enterChat = (history) => ({type: ENTER_CHAT, history });
 
